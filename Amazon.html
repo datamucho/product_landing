@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<html lang="en">
+<head>
+    <style>
+body{
+    background-color:  #ffff00;
+    font-size: helvetica;
+}
+div.header-img{
+    width: 100%;
+    background-color: #1a1a1a;
+    overflow: hidden;
+    position: fixed;
+}
+#header-img{
+    width: 200px;
+    height: 50px;
+    filter: invert(100%);
+    margin:auto;
+    display: block;
+}
+div.nav-bar{
+    overflow:hidden;
+    position: fixed;
+    background-color: #1a1a1a;
+    width: 100%;
+    top: 50px;
+}
+.nav-link{
+    color:white;
+    padding: 14px 50px;
+    font-size: 18px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    transition:background .5s ease;
+}
+.nav-link:hover{
+    background-color:  #1f1f7a
+;
+}
+.title {
+    margin-top: 170px;
+    color: #ff0000;
+    text-align: center;
+
+}
+#email {
+    display: block;
+    margin:auto;
+    width:180px;
+    padding:8px; 
+    border-radius: 50px;
+    border:none;
+    background-color: #ff0000;
+    color:white;
+    font-size:15px;
+    transition: width .5s ease, background .5s ease;
+    
+}
+#email::placeholder {
+    color: white;
+    opacity: 80%;
+}
+#email:hover{
+background-color: #ff0080;
+width: 300px;
+}
+#submit{
+    display: block;
+    margin: auto;
+    padding: 8px;
+    border: none;
+    border-radius: 50px;
+    width: 80px;
+    background-color: #ff0000;
+    margin-top:20px;
+    color:white;
+    font-size:15px;
+    transition:background .5s ease;
+}
+#submit:hover{
+    background-color: #ff0080;
+}
+.text{
+    width: 700px;
+    margin:auto;
+    color: #ff0000;
+    margin-top: 100px;
+    transition:text-shadow .5s ease;
+}
+.text:hover{
+    text-shadow: 0px 0px 10px;
+}
+#video {
+    margin:auto;
+    display:block;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 5px;
+    background-color: #ff0000;
+}
+div.flex-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+div.product{
+    background-color: white;
+    margin: 20px;
+    transition:box-shadow .5s ease;
+}
+.product:hover{
+    box-shadow: 0px 0px 10px #008fb3;
+}
+div.product-title{
+    padding: 10px;
+    background-color: #008fb3;
+    color:white;
+    text-align: center;
+}
+div.product-description{
+    color:#008fb3;
+}
+#product-submit{
+    background-color: #ff0000;
+    border:none;
+    color: white;
+    width:100%;
+    text-decoration: none;
+    font-size: 20px;
+    padding:15px;
+    transition:background .5s ease;
+}
+#product-submit:hover{b
+    background-color: #008fb3;
+}
+@media screen and (max-width:600px){
+    .flex-container{
+       flex-direction:column ;
+    }
+    .nav-link{
+        width:100%;
+        margin: auto;
+    }
+    .text{
+        width:400px;
+    }
+}
+
+
+
+
+
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namdvili amazoni</title>
+    
+</head>
+<body>
+    <header id="header">
+
+        <div class="header-img">
+            <img id="header-img" src="https://boldmedya.com/wp-content/uploads/2020/01/Amazon-logo.jpg">
+       
+
+
+        </div>
+        <div class="nav-bar">
+            <nav id="nav-bar">
+                <ul class="links">
+                    <a class="nav-link" href="#feature">Features</a>
+                    <a class="nav-link" href="#how-it-works">How It Works?</a>
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <br>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <h1 class="title">Handcrafted, home-made masterpieces
+            </h1>
+            <input id="email" type="email" name="email" placeholder="Enter Your Email Adress" button type="submit">
+            <input button id="submit" type="submit" value="START">
+
+
+
+
+        </form>
+<br>
+<div class="text" id="feature">
+    <h1>Premium Materials</h1>
+    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+    
+
+    <h1>Fast Shipping</h1>
+    <p>We make sure you recieve your trombone as soon as we have finished making it. 
+    We also provide free returns if you are not satisfied.</p>
+   
+
+
+    <h1>Quality Assurance</h1>
+    <p>For every purchase you make, we will ensure there are no damages or faults 
+    and we will check and test the pitch of your instrument.</p>
+    
+</div>
+<br>
+
+<div id="how-it-works">
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" 
+    allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+
+<div id="pricing" class="flex-container">
+    <div class="product">
+        <div class="product-title">
+            <h1>TENOR TROMBONE
+            </h1>
+        </div>
+        <div class="product-description">
+            <h2>600$</h2>
+            <p>bla</p>
+            <p>jaja</p>
+            <p>blulb</p>
+        </div>
+        <div class="producr-submit">
+            <input id="product-submit" button type="submit" value="select">
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-title">
+            <h1>BASS TROMBONE
+            </h1>
+        </div>
+        <div class="product-description">
+            <h2>900$</h2>
+            <p>jagajaga</p>
+            <p>maguga</p>
+            <p>aaa</p>
+        </div>
+        <div class="producr-submit">
+            <input id="product-submit" button type="submit" value="select">
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-title">
+            <h1>VALVE TROMBONE
+            </h1>
+        </div>
+        <div class="product-description">
+            <h2>1200$</h2>
+            <p>ads</p>
+            <p>sd</p>
+            <p>blabla</p>
+        </div>
+        <div class="producr-submit">
+            <input id="product-submit" button type="submit" value="select">
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
